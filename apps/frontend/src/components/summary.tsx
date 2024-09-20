@@ -39,16 +39,16 @@ export default function Summary() {
   }
 
   return (
-    <div className="py-10 max-w-[500px] px-5 mx-auto flex flex-col gap-6">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
+    <div className="py-10 max-w-[500px] mx-auto lg:px-5 px-2 flex flex-col gap-6">
+      <div className="flex items-center justify-between lg:flex-row flex-col">
+        <div className="flex items-center gap-3 ">
           <img src={InOrbitIcon} alt="in orbit icon" />
           <span className="text-lg font-bold capitalize">
             {firstDayOfWeek} - {lastDayOfWeek}
           </span>
         </div>
         <DialogTrigger asChild>
-          <Button>
+          <Button className='p-2 lg:w-5/12 w-10/12 mt-3'>
             <Plus className="size-sm" />
             Cadastrar meta
           </Button>

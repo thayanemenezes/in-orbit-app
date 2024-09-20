@@ -49,7 +49,7 @@ export default function CreateGoal() {
 
   return (
     <DialogContent>
-      <div className="flex flex-col gap-6 h-full">
+      <div className="flex flex-col gap-6 h-full overflow-auto p-4">
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-between">
             <DialogTitle>Cadastrar meta</DialogTitle>
@@ -148,7 +148,7 @@ export default function CreateGoal() {
               />
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 pt-4">
             <DialogTrigger asChild>
               <Button type="button" className="flex-1" variant="secondary">
                 Fechar
