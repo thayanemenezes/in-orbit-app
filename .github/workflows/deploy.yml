@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+
+    - name: Install dependencies
+      run: |
+        cd apps/frontend
+        npm install  # Substitua se você usa Yarn ou outra ferramenta
+
+   
+    - name: Build the project
+      run: |
+        cd apps/frontend
+        npm run build  # Substitua pelo comando de build do seu projeto
+
+ 
+    - name: Prepare deploy directory
+      run: |
+        mkdir deploy
+        cp -r apps/frontend/* deploy/
+
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./deploy
