@@ -7,7 +7,7 @@ import { Separator } from './ui/separator'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { getSummary } from '../http/get-summary'
 import dayjs from 'dayjs'
-import ptBR from 'dayjs/locale/pt-BR'
+import ptBR from 'dayjs/locale/pt-br'
 import { PendingGoals } from './pending-goals'
 import { undoGoalCompletion } from '../http/undo-goal-competion'
 
