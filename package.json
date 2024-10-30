@@ -1,14 +1,21 @@
 {
+  "name": "in-orbit",
   "private": true,
+ "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@1.22.22",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ],
-  "scripts": {
-    "start": "lerna run dev --parallel"
-  },
-  "devDependencies": {
-    "lerna": "^8.1.8",
-    "typescript": "^5.6.2"
-  }
+  ]
 }
