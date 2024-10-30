@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsx watch --env-file .env src/http/server.ts",
     "seed": "tsx --env-file .env src/db/seed.ts",
-     "build": "tsx build --out-dir dist src/http/server.ts"
+    "build": "tsc --outDir dist"
   },
   "keywords": [],
   "author": "",
