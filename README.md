@@ -1,7 +1,10 @@
-# App for organizing personal goals using monorepo architecture
+# In Orbit
 
-``  sh 
- yarn add
-yarn dev
-``
-  
+Web application for organizing personal goals using monorepo architecture
+
+```bash
+  yarn add
+  yarn dev
+```
+
+
