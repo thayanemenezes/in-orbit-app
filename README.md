@@ -1,7 +1,7 @@
-# App for organizing personal goals using monorepo architecture with lerna
+# App for organizing personal goals using monorepo architecture
 
 ``  sh 
-  npm install
-  npm run dev
+ yarn add
+yarn dev
 ``
   
