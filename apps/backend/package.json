@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "tsx watch --env-file .env src/http/server.ts",
     "seed": "tsx --env-file .env src/db/seed.ts",
-    "build": "tsc --outDir dist"
+    "build": "tsc --outDir dist",
+    "supabase:link": "supabase link --project-ref dybhsezyznzrvmtlpsyg",
+    "supabase:migration:new": "supabase migration new",
+    "supabase:db:push": "supabase db push"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^22.5.4",
     "drizzle-kit": "^0.24.2",
+    "supabase": "^1.207.9",
     "tsx": "^4.19.0"
   },
   "dependencies": {
